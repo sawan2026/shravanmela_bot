@@ -1,3 +1,8 @@
+function getTime() {
+  return new Date().toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata"
+  });
+}
 const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 
