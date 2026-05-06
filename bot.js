@@ -4,7 +4,7 @@ const axios = require('axios');
 console.log("🚀 BOT STARTED");
 
 const TOKEN = "8740821026:AAF0XrQBWrG2NNDb8pn1ksH330l1iv5bSSE";
-const SHEET_URL = "https://script.google.com/macros/s/AKfycbwsZp5Aeqyucj1Sjv_FLcz8WI9Nc29aoxWhaHejgEB23-tYCgVTR8jB6rK8M7GuTT9nFw/exec";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbymTGtS8zDV_qop9X1IdWSqHmf5JoHYt1xK19uVsivwZ7oI7TU2frw8hyFdzCkqmtuIGg/exec";
 const EMPLOYEE_API = SHEET_URL + "?action=getEmployees";
 
 const bot = new TelegramBot(TOKEN, { polling: true });
