@@ -8,7 +8,11 @@ const SHEET_URL = "https://script.google.com/macros/s/AKfycbwX03EjwynFgJwWDOPbOM
 const EMPLOYEE_API = SHEET_URL + "?action=getEmployees";
 
 const bot = new TelegramBot(TOKEN, { polling: true });
-
+function getISTTime() {
+  return new Date().toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata"
+  });
+}
 
 // 🟢 Distance
 function getDistance(lat1, lon1, lat2, lon2) {
